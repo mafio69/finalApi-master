@@ -51,7 +51,7 @@ services:
     container_name: mf-mysql-dev
     ports:
       - "${DATABASE_PORT_LOCAL:-3310}:3306"
-    image: mysql:5.7
+    image: mysql:8.0.27
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
