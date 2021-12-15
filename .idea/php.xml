@@ -87,12 +87,45 @@
       <path value="$PROJECT_DIR$/main/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/main/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/main/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/main/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/main/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/main/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/main/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/main/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/main/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/main/vendor/dama/doctrine-test-bundle" />
+      <path value="$PROJECT_DIR$/main/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/main/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/main/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/main/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/lines-of-code" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="b6ecb620-c885-4320-9ea9-988229a1b648" name="api" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
-        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="api" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="api-dev" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
             <item value="$PROJECT_DIR$/docker-compose.yml" />
@@ -105,14 +138,14 @@
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="api">
-        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="8.0.13">
-          <additional_php_ini>/usr/local/etc/php/conf.d/custom.ini, /usr/local/etc/php/conf.d/docker-php-ext-intl.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-pdo_mysql.ini, /usr/local/etc/php/conf.d/docker-php-ext-redis.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/xdebug.ini</additional_php_ini>
+        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.0">
+          <additional_php_ini>/usr/local/etc/php/conf.d/custom.ini, /usr/local/etc/php/conf.d/docker-php-ext-intl.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-pdo_mysql.ini, /usr/local/etc/php/conf.d/docker-php-ext-redis.ini, /usr/local/etc/php/conf.d/docker-php-ext-sockets.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini</additional_php_ini>
           <configuration_file />
           <configuration_options>
             <configuration_option name="include_path" value=".:/usr/local/lib/php" />
           </configuration_options>
           <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="3.1.1">
+            <debugger_info debugger="xdebug" debugger_version="3.1.2">
               <debug_extensions />
             </debugger_info>
           </debuggers>
@@ -146,6 +179,7 @@
             <extension name="readline" />
             <extension name="redis" />
             <extension name="session" />
+            <extension name="sockets" />
             <extension name="sodium" />
             <extension name="sqlite3" />
             <extension name="standard" />
@@ -160,5 +194,10 @@
       </interpreter>
     </phpInfoCache>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/main/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
 </project>
