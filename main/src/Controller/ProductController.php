@@ -35,4 +35,17 @@ class ProductController extends AbstractController
             .' and new category with id: '.$category->getId()
         );
     }
+
+    #[Route('/test', name: 'test')]
+    public function test(ManagerRegistry $doctrine)
+    {
+        $entityManager = $doctrine->getManager();
+
+        /** @var Product $product */
+        $product = $entityManager->getRepository(Product::class)->findAll([$entityManager->find(Category::class, 1)]);
+
+        return new Response(
+            'Saved new product with id: '.$product[0]->getName()
+        );
+    }
 }
